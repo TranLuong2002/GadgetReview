@@ -5,6 +5,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
+    "dev": "vite",
     "build": "NODE_ENV=production vite build"
   },
   "dependencies": {

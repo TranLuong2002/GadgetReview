@@ -1,4 +1,4 @@
-import { Page, Text } from "@shopify/polaris";
+import { Page, Text,Button } from "@shopify/polaris";
 import { useNavigate } from "react-router-dom";
 
 export default function () {
@@ -15,6 +15,7 @@ export default function () {
       <Text variant="bodyMd" as="p">
         This is a simple Shopify Embedded App.
       </Text>
+      <Button variant="primary">Save theme</Button>
     </Page>
   );
 }

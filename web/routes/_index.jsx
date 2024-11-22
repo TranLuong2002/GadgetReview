@@ -1,8 +1,7 @@
 import { Layout, Page, Card, Text } from "@shopify/polaris";
 import { AutoForm, AutoTable } from "@gadgetinc/react/auto/polaris";
 import { api } from "../api";
-
-export default function () {
+export default function Index() {
   // use autocomponents to automatically create a form and table to manage allowedTag records
   return (
     <Page title="Keyword manager">

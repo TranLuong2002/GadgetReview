@@ -1,8 +1,15 @@
-import react from "@vitejs/plugin-react-swc";
 import { defineConfig } from "vite";
 import { gadget } from "gadget-server/vite";
+import { remixViteOptions } from "gadget-server/remix";
+import { vitePlugin as remix } from "@remix-run/dev";
 
 export default defineConfig({
-  plugins: [gadget(), react()],
-  clearScreen: false,
+  plugins: [
+    gadget(),
+    remix({
+      ...remixViteOptions,
+      ssr: false,
+      
+    }),
+  ],
 });
